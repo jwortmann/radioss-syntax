@@ -1,0 +1,20 @@
+%YAML 1.2
+---
+name: RADIOSS
+file_extensions: [rad]
+scope: source.radioss
+
+contexts:
+    main:
+        - match: (\#).*$\n?
+          scope: comment.line.radioss
+        - match: '/[a-zA-Z0-9-_]+'
+          scope: keyword.radioss
+        - match: '\b[0-9]+\.{1}'
+          scope: constant.numeric.radioss
+        - match: '\.{1}[0-9]+'
+          scope: constant.numeric.radioss
+        - match: '\b[-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?'
+          scope: constant.numeric.radioss
+        - match: '[-+][0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?'
+          scope: constant.numeric.radioss

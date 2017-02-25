@@ -1,2 +1,3 @@
-# radioss-syntax
-RADIOSS input deck syntax for Sublime Text
+# RADIOSS Syntax
+
+This package for Sublime Text provides syntax definitions for RADIOSS input decks.
